@@ -11,7 +11,7 @@ namespace RegularExpression
         static void Main(string[] args)
         {
             RegexPatternMatching password = new RegexPatternMatching();
-            password.ValidatePassword("Fgqtwdof");
+            password.ValidatePassword("F5gqtFwdof");
         }
     }
 }

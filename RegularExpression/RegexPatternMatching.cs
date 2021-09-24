@@ -9,9 +9,9 @@ namespace RegularExpression
 {
     class RegexPatternMatching
     {
-        // UC-6 (Rule-2): Pattern to validate a password having atleast 1 uppercase character
+        // UC-7 (Rule-3): Pattern to validate a password having atleast 1 number
 
-        public string PASSWORD_REGEX = "^[A-Z]{1,}[A-Za-z]{7,}$";
+        public string PASSWORD_REGEX = "^[A-Z]{1,}[0-9]{1,}[A-Za-z]{6,}$";
 
         public void ValidatePassword(string passWord)
         {
