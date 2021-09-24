@@ -1,2 +1,2 @@
 # RegexAssignments
-# This use case contains the regular expression for password validation with minimum of 8 characters.
+# This use case contains the regular expression for password validation with minimum 1 upper case character.
