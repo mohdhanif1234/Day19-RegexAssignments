@@ -10,8 +10,8 @@ namespace RegularExpression
     {
         static void Main(string[] args)
         {
-            RegexPatternMatching password = new RegexPatternMatching();
-            password.ValidatePassword("Fqwerty?");
+            RegexPatternMatching email = new RegexPatternMatching();
+            email.ValidateEmailAllRules("abc.@gmail.com");
         }
     }
 }

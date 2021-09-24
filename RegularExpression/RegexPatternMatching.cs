@@ -8,27 +8,23 @@ using System.Threading.Tasks;
 namespace RegularExpression
 {
     class RegexPatternMatching
-    {
-        public string PASSWORD_REGEX = "^[A-Za-z]{7,}[~!@#$%^&*]$";
+    {    
+        // UC-9: To clear all the email samples provided separately
 
-        // UC-8 (Rule-4): Pattern to validate a password having exactly 1 special character
+        public string EMAIL_REGEX = "^[a-z]+[-.+]?([0-9]+)?([a-z]|[0-9])+[@]([0-9]+)?([a-z]+)?[.][a-z]{2,3}([.][a-z]+)?$";
 
-        public void ValidatePassword(string passWord)
+        public void ValidateEmailAllRules(string emailId)
         {
-            if (Regex.IsMatch(passWord, PASSWORD_REGEX))
+            if (Regex.IsMatch(emailId, EMAIL_REGEX))  
             {
-                Console.WriteLine("Password is valid");
+                Console.WriteLine("Email Id is valid");
                 Console.ReadLine();
             }
             else
             {
-                Console.WriteLine("Password is invalid");
+                Console.WriteLine("Email Id is invalid");
                 Console.ReadLine();
             }
         }
-
-        
-
-        
     }
 }
