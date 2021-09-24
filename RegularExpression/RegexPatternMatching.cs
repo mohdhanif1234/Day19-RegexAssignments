@@ -9,23 +9,25 @@ namespace RegularExpression
 {
     class RegexPatternMatching
     {
-        // UC-4: Pattern to validate mobile number
+        // UC-5 (Rule-1): Pattern to validate a password having minimum of 8 characters
 
-        public string MOBILE_NO_REGEX = "^[9][1][ ][6-9][0-9]{9}$";
+        public string PASSWORD_REGEX = "^[A-Za-z]{8,}";
 
-        public void ValidateMobileNo(string mobNumber)
+        public void ValidatePassword(string passWord)
         {
-            if (Regex.IsMatch(mobNumber, MOBILE_NO_REGEX))
+            if (Regex.IsMatch(passWord, PASSWORD_REGEX))
             {
-                Console.WriteLine("Mobile number is valid");
+                Console.WriteLine("Password is valid");
                 Console.ReadLine();
             }
             else
             {
-                Console.WriteLine("Mobile number is invalid");
+                Console.WriteLine("Password is invalid");
                 Console.ReadLine();
             }
         }
+
+        
 
         
     }

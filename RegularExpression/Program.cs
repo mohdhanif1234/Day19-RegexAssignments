@@ -10,8 +10,8 @@ namespace RegularExpression
     {
         static void Main(string[] args)
         {
-            RegexPatternMatching mobNo = new RegexPatternMatching();
-            mobNo.ValidateMobileNo("91 9919819801");
+            RegexPatternMatching password = new RegexPatternMatching();
+            password.ValidatePassword("FGqtwdofjm");
         }
     }
 }
