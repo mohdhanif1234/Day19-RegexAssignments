@@ -10,8 +10,8 @@ namespace RegularExpression
     {
         static void Main(string[] args)
         {
-            RegexPatternMatching firstName = new RegexPatternMatching();
-            firstName.ValidateFirstName("Hanif");
+            RegexPatternMatching lastName = new RegexPatternMatching();
+            lastName.ValidateLastName("Mohammad");
         }
     }
 }
