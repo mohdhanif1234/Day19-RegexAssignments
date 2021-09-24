@@ -9,22 +9,24 @@ namespace RegularExpression
 {
     class RegexPatternMatching
     {
-        // UC-3: Pattern to validate an email Id
+        // UC-4: Pattern to validate mobile number
 
-        public string EMAIL_REGEX = "^[A-Za-z]+([.][A-Za-z]+)?[@][a-z]+[.][a-z]{2,3}([.][a-z]{2})?$";
+        public string MOBILE_NO_REGEX = "^[9][1][ ][6-9][0-9]{9}$";
 
-        public void ValidateEmail( string eMail)
+        public void ValidateMobileNo(string mobNumber)
         {
-            if (Regex.IsMatch(eMail, EMAIL_REGEX))
+            if (Regex.IsMatch(mobNumber, MOBILE_NO_REGEX))
             {
-                Console.WriteLine("Email is valid");
+                Console.WriteLine("Mobile number is valid");
                 Console.ReadLine();
             }
             else
             {
-                Console.WriteLine("Email is not valid");
+                Console.WriteLine("Mobile number is invalid");
                 Console.ReadLine();
             }
         }
+
+        
     }
 }
