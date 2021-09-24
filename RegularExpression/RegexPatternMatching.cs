@@ -9,20 +9,20 @@ namespace RegularExpression
 {
     class RegexPatternMatching
     {
-        // UC-2: Last name starts with a capital letter and has minimum 3 letters followed by it
+        // UC-3: Pattern to validate an email Id
 
-        public string LAST_NAME_REGEX = "^[A-Z]{1}[a-z]{3,}$";
+        public string EMAIL_REGEX = "^[A-Za-z]+([.][A-Za-z]+)?[@][a-z]+[.][a-z]{2,3}([.][a-z]{2})?$";
 
-        public void ValidateLastName(string lName)
+        public void ValidateEmail( string eMail)
         {
-            if (Regex.IsMatch(lName, LAST_NAME_REGEX))
+            if (Regex.IsMatch(eMail, EMAIL_REGEX))
             {
-                Console.WriteLine("Pattern is valid");
+                Console.WriteLine("Email is valid");
                 Console.ReadLine();
             }
             else
             {
-                Console.WriteLine("Pattern is invalid");
+                Console.WriteLine("Email is not valid");
                 Console.ReadLine();
             }
         }
